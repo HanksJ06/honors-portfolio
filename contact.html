@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Joseph Hankins's Honors Portfolio - Contact</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("Dic4G92JpwusQE1YN");  // Public key from EmailJS dashboard
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_iywgyne', 'template_tebtsfe', this)  // Replace with your actual Service and Template IDs
+                        .then(() => {
+                            alert('Message sent successfully!');
+                        }, (error) => {
+                            console.error('Error occurred: ', error);
+                            alert('Message failed to send.');
+                        });
+                });
+            }
+        </script>
+	</head>
+	<body class="contact is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Joseph Hankins</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">Pages</a>
+								<ul>
+									<li><a href="Honors-experiences.html">Honors experiences</a></li>
+									<li><a href="professinal-history.html">Professional History</a></li>
+									<li><a href="Intrests.html">Interests</a></li>
+									<li><a href="Gateway.html">Gateway</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li class="submenu">
+										<a href="#">Year in review</a>
+										<ul>
+											<li><a href="2025.html">2025</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon solid fa-envelope"></span>
+						<h2>Get In Touch</h2>
+						<p>Use the form below to send me a message.</p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 special container medium">
+
+							<!-- Content -->
+								<div class="content">
+									           <form id="contact-form">
+													<input type="text" name="user_name" placeholder="Your Name" required><br><br>
+													<input type="email" name="user_email" placeholder="Your Email" required><br><br>
+													<textarea name="message" placeholder="Your Message" required></textarea><br><br>
+													<button type="submit">Send Message</button>
+												</form>
+								</div>
+
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/profile.php?id=61560828756628" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/in/joseph-hankins/" class="icon brands circle fab fa-linkedin"><span class="label">linkedin</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Joseph Hankins 2025</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
